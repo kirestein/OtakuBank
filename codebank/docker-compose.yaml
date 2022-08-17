@@ -5,11 +5,11 @@ services:
     container_name: appbank
     build: .
     ports:
-      - "50052:50051"
+      - "50042:50051"
     volumes:
       - .:/go/src/
     extra_hosts:
-      - "host.docker.internal:172.17.0.1"
+      - "host.docker.internal:172.18.0.1"
 
   db:
     image: postgres:9.4

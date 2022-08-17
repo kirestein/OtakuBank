@@ -21,7 +21,7 @@ type Transaction struct {
 	CreatedAt    time.Time
 }
 
-func NewTransaction() *Transaction {
+func NewTransaction() *Transaction { 
 	t := &Transaction{}
 	t.ID = uuid.NewV4().String()
 	t.CreatedAt = time.Now()
